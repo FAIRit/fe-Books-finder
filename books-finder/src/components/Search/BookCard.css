@@ -1,0 +1,57 @@
+.book-card {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    width: 300px;
+}
+
+.book-card img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    background-color: brown;
+    margin: 0 auto;
+    
+ 
+}
+
+.book-card .card {
+    height: 550px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.book-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.book-footer-badge {
+    border-radius: 4px;
+    border: 1px solid gainsboro;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.book-card-description {
+    text-align: center;
+}
+
+.book-card-description-extended {
+display: none; 
+}
+
+.category-button {
+    justify-content: space-between;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+
+
+}
+.choose-category-container {
+    position: relative;
+}

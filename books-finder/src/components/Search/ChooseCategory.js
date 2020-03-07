@@ -3,47 +3,42 @@ import { BOOKS } from "../../data/BOOKS";
 import BookCardsChildren from "./BookCardsChildren";
 import BookCardsTeachers from "./BookCardsTeachers";
 import BookCardsParents from "./BookCardsParents";
-import HomeButton from "../LandingPage/HomeButton";
 import './BookCard.css';
 
 class ChooseCategory extends Component {
   constructor(props) {
     super(props);
-    this.state = { show: false};
+    this.state = { show: ' '};
   }
   categoryChildren = () => {
-    const { show } = this.state;
-    this.setState({ show: false});
-    this.categoryChildren = this.categoryChildren.bind(this);
+    this.setState({ show: "children"});
+
   };
   categoryParents = () => {
-    const { show } = this.state;
-    this.setState({ show: false});
-    this.categoryParents = this.categoryParents.bind(this);
+    this.setState({ show: "parents"});
+    
   };
   categoryTeachers = () => {
-    const { show } = this.state;
-    this.setState({ show: false});
-    this.categoryTeachers = this.categoryTeachers.bind(this);
+    this.setState({ show: "teachers"});
+   
   };
 
   render() {
     return (
       <>
       <div className ="choose-category-container">
-        <div className="home-button">
-          <HomeButton />
-        </div>
-        <button className = "category-button" onClick={<BookCardsChildren />}>
+        <button className = "category-button" onClick={this.categoryChildren}>
           Książki dla dzieci </button>
-        {this.state.show && <BookCardsChildren />}
+        
         <button className = "category-button" onClick={this.categoryParents}>Książki dla rodziców </button>
-        {this.state.show.categoryParents && <BookCardsParents />}
+        
         <button className = "category-button" onClick={this.categoryTeachers}>
           Książki dla nauczycieli/
           terapeutów
         </button>
-        {this.state.show.categoryTeachers && <BookCardsTeachers />}
+        {this.state.show === 'parents' && <BookCardsParents />}
+        {this.state.show === "children" && <BookCardsChildren />}
+        {this.state.show ==="teachers"&& <BookCardsTeachers />}
         </div>
       </>
     );

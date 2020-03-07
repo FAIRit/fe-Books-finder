@@ -103,155 +103,53 @@
 //       </div>
 //         );
 //       }
-      {/* <FormControl className={classes.formControl}>
-        <InputLabel id="demo-mutiple-checkbox-label">Autor</InputLabel>
-        <Select
-          labelId="demo-mutiple-checkbox-label"
-          id="demo-mutiple-checkbox"
-          multiple
-          value={personName}
-          onChange={handleChange}
-          input={<Input />}
-          renderValue={selected => selected.join(', ')}
-          MenuProps={MenuProps}
-        >
-          {names.map(name => (
-            <MenuItem key={name} value={name}>
-              <Checkbox checked={personName.indexOf(name) > -1} />
-              <ListItemText primary={name} />
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-      <FormControl className={classes.formControl}>
-        <InputLabel id="demo-mutiple-chip-label">Zagadnienie</InputLabel>
-        <Select
-          labelId="demo-mutiple-chip-label"
-          id="demo-mutiple-chip"
-          multiple
-          value={keywords}
-          onChange={handleChange}
-          input={<Input id="select-multiple-chip" />}
-          renderValue={selected => (
-            <div className={classes.chips}>
-              {keywords.map(keyword=> (
-                <Chip key={keyword} label={keyword} className={classes.chip} />
-              ))}
-            </div>
-          )}
-          MenuProps={MenuProps}
-        >
-          {keywords.map(item => (
-            <MenuItem key={keywords} value={keywords} 
-            // style={getStyles(name, personName, theme)}
-            >
-              {keywords}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-    < BookCards /> */}
-    /// </div>
-
-// import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import InputLabel from '@material-ui/core/InputLabel';
-// import FormHelperText from '@material-ui/core/FormHelperText';
-// import FormControl from '@material-ui/core/FormControl';
-// import Select from '@material-ui/core/Select';
-// import NativeSelect from '@material-ui/core/NativeSelect';
-// import BookCard from './BookCard';
-// import BookCards from './BookCards';
-// import {BOOKS} from '../../data/BOOKS';
-
-// const useStyles = makeStyles(theme => ({
-//   formControl: {
-//     margin: theme.spacing(1),
-//     minWidth: 120,
-//   },
-//   selectEmpty: {
-//     marginTop: theme.spacing(2),
-//   },
-// }));
-
-// export default function NativeSelects() {
-//   const classes = useStyles();
-//   const [state, setState] = React.useState({
-//    title: '',
-//     name: 'hai',
-//   });
-
-//   const inputLabel = React.useRef(null);
-//   const [labelWidth, setLabelWidth] = React.useState(0);
-//   React.useEffect(() => {
-//     setLabelWidth(inputLabel.current.offsetWidth);
-//   }, []);
-
-//   const handleChange = name => event => {
-//     setState({
-//       ...state,
-//       [name]: event.target.value,
-//     });
-//   };
-
-//   return (
-//     <div>
 //       <FormControl className={classes.formControl}>
-//         <InputLabel htmlFor="age-native-simple">Tytuł</InputLabel>
+//         <InputLabel id="demo-mutiple-checkbox-label">Autor</InputLabel>
 //         <Select
-//           native
-//           value={BOOKS.title}
-//           onChange={handleChange('title')}
-//           inputProps={{
-//             name: 'title',
-//             id: 'age-native-simple',
-//           }}
+//           labelId="demo-mutiple-checkbox-label"
+//           id="demo-mutiple-checkbox"
+//           multiple
+//           value={personName}
+//           onChange={handleChange}
+//           input={<Input />}
+//           renderValue={selected => selected.join(', ')}
+//           MenuProps={MenuProps}
 //         >
-//           <option value="" />
-//           <option value={10}>Ten</option>
-//           <option value={20}>Twenty</option>
-//           <option value={30}>Thirty</option>
+//           {names.map(name => (
+//             <MenuItem key={name} value={name}>
+//               <Checkbox checked={personName.indexOf(name) > -1} />
+//               <ListItemText primary={name} />
+//             </MenuItem>
+//           ))}
 //         </Select>
 //       </FormControl>
-//       </div>
-//   )
-//         }
-//   const names = [BOOKS[0].author]
+//       <FormControl className={classes.formControl}>
+//         <InputLabel id="demo-mutiple-chip-label">Zagadnienie</InputLabel>
+//         <Select
+//           labelId="demo-mutiple-chip-label"
+//           id="demo-mutiple-chip"
+//           multiple
+//           value={keywords}
+//           onChange={handleChange}
+//           input={<Input id="select-multiple-chip" />}
+//           renderValue={selected => (
+//             <div className={classes.chips}>
+//               {keywords.map(keyword=> (
+//                 <Chip key={keyword} label={keyword} className={classes.chip} />
+//               ))}
+//             </div>
+//           )}
+//           MenuProps={MenuProps}
+//         >
+//           {keywords.map(item => (
+//             <MenuItem key={keywords} value={keywords} 
+//             // style={getStyles(name, personName, theme)}
+//             >
+//               {keywords}
+//             </MenuItem>
+//           ))}
+//         </Select>
+//       </FormControl>
+//     < BookCards /> 
+  
 
-// class MultipleSelect extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {value: ' '};
-
-//     this.handleChange = this.handleChange.bind(this);
-//     this.handleSubmit = this.handleSubmit.bind(this);
-//   }
-
-//   handleChange(event) {
-//     this.setState({value: event.target.value});
-//   }
-
-//   handleSubmit(event) {
-//     alert('Your favorite flavor is: ' + this.state.value);
-//     event.preventDefault();
-//   }
-
-
-//   render() {
-//     return (
-//       <form onSubmit={this.handleSubmit}>
-//         <label>
-//           Pick your favorite flavor:
-//           <select value={this.state.value} onChange={this.handleChange}>
-//           <option value="/"></option>
-//             <option value= {BOOKS}> </option>
-//           {/* //  key={item.id} > */}
-//           </select>
-//         </label>
-//         <input type="submit" value="Submit" />
-//       </form>
-//     );
-//   }
-// }
-
-// export default MultipleSelect;

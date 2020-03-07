@@ -9,7 +9,6 @@ const BookCardsChildren = () => {
 
   return (
     <>
-      <h2>Book cards</h2>
       <div className={styles.cardsContainer}>
           {BOOKS.children.map(item => (
         <BookCard key ={BOOKS.children.id} card={item} />

@@ -7,9 +7,9 @@ import BookCard from "./BookCard";
 const BookCardsTeachers = () => {
   return (
     <>
-      <h2>Book cards</h2>
+     
       <div className={styles.cardsContainer}>
-          {BOOKS.children.map(item => (
+          {BOOKS.teachers.map(item => (
         <BookCard key ={BOOKS.teachers.id} card={item} />
           ))}
       </div>

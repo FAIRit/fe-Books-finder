@@ -1,25 +1,41 @@
-import React from "react";
+import React, {Component} from "react";
 import "./BookCard.css";
 
-const BookCard = ({ card }) => (
+class BookCard extends Component  {
+  constructor (props) {
+    super(props);
+    this.state = {
+      showExtended : false,
+    }
+    
+  }
+extendButtonHandle = () => {
+  this.setState ({
+showExtended: true
+  })
+}
+  
+render () {
+  return (
+    <>
   <div className="book-card">
     <div className="book-card card">
       <img
-        src={card.imageUrl}
+        src={props.imageUrl}
         alt=""class
       />
       <div>
-        <h2>{card.title}</h2>
-        <h3>{card.author}</h3>
-        <h4>{card.publisher}</h4>
+        <h2>{props.title}</h2>
+        <h3>{props.author}</h3>
+        <h4>{props.publisher}</h4>
         <p className="book-card-description" style={{ fontSize: "14px" }}>
-          {card.description}
+          {props.description}
         </p>
-        <button className = "book-card-description-extended-button" >
+        <button onClick= {this.extendButtonHandle} className = "book-card-description-extended-button" >
           <p>Pokaż więcej</p>
         </button>
         <p className="book-card-description-extended" style={{ fontSize: "14px" }}>
-          {card.descriptionExtended}
+          {props.descriptionExtended}
         </p>
       </div>
       <div className="card-footer">
@@ -34,11 +50,14 @@ const BookCard = ({ card }) => (
             </div>
           </div>
         </div>
-        <div className="card-footer-badge">{card.rating}</div>
+        <div className="card-footer-badge">{props.rating}</div>
         <i class="fa fa-heart"></i>
       </div>
     </div>
   </div>
+  </>
 );
+  }
+}
 
 export default BookCard;

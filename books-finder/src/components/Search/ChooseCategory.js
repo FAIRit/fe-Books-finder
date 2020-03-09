@@ -4,6 +4,7 @@ import BookCardsChildren from "./BookCardsChildren";
 import BookCardsTeachers from "./BookCardsTeachers";
 import BookCardsParents from "./BookCardsParents";
 import './BookCard.css';
+import MultipleSelect from "./MultipleSelect";
 
 class ChooseCategory extends Component {
   constructor(props) {
@@ -36,10 +37,14 @@ class ChooseCategory extends Component {
           Książki dla nauczycieli/
           terapeutów
         </button>
+        <div>
+        < MultipleSelect />
+        </div>
         {this.state.show === 'parents' && <BookCardsParents />}
         {this.state.show === "children" && <BookCardsChildren />}
         {this.state.show ==="teachers"&& <BookCardsTeachers />}
         </div>
+        
       </>
     );
   }

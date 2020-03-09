@@ -1,28 +1,29 @@
-import React from 'react';
-
+import React from "react";
 
 const RegisterBox = () => {
-
-    return (
-      <>
+  return (
+    <>
       <div className="inner-container">
-        <div className="header">
-          Register
-        </div>
+        <div className="header">Register</div>
         <div className="box">
-
           <div className="input-group">
             <label htmlFor="username">Username</label>
             <input
               type="text"
               name="username"
               className="login-input"
-              placeholder="Username"/>
+              placeholder="Username"
+            />
           </div>
 
           <div className="input-group">
             <label htmlFor="email">Email</label>
-            <input type="text" name="email" className="login-input" placeholder="Email"/>
+            <input
+              type="text"
+              name="email"
+              className="login-input"
+              placeholder="Email"
+            />
           </div>
 
           <div className="input-group">
@@ -31,23 +32,19 @@ const RegisterBox = () => {
               type="password"
               name="password"
               className="login-input"
-              placeholder="Password"/>
+              placeholder="Password"
+            />
           </div>
-          <button
-            type="button"
-            className="login-btn">
-              Submit
+          <button type="button" className="login-btn">
+            Submit
             {/* onClick={this
             .submitRegister
             .bind(this)}>Register */}
-            </button>
+          </button>
         </div>
       </div>
-      </>
-    );
-  }
-
-
+    </>
+  );
+};
 
 export default RegisterBox;
-

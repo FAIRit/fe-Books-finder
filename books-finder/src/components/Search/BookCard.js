@@ -6,26 +6,25 @@ import Ranking from "../Login/Ranking";
 // const red = '#FF0000';
 
 class BookCard extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      showExtended: false,
+      showExtended: false
       // color: black,
     };
   }
 
   clickedButtonHandle = () => {
     this.setState({
-      showExtended: this.props.card.descriptionExtended,
+      showExtended: this.props.card.descriptionExtended
     });
   };
 
-clickedLikeButtonHandle = () => {
-  this.setState({
-  // color: red,
-  })
-}
+  clickedLikeButtonHandle = () => {
+    this.setState({
+      // color: red,
+    });
+  };
 
   render() {
     return (
@@ -40,10 +39,10 @@ clickedLikeButtonHandle = () => {
               <p className="book-card-description" style={{ fontSize: "14px" }}>
                 {this.props.card.description}
               </p>
-              </div>
-              <div className = "description-extended">
+            </div>
+            <div className="description-extended">
               <button onClick={this.clickedButtonHandle}>Pokaż więcej</button>
-            {this.state.showExtended}
+              {this.state.showExtended}
             </div>
             {/* <button onClick={this.clickedButtonHandle}>Pokaż mniej</button>
             {this.state.showExtended} */}
@@ -51,7 +50,7 @@ clickedLikeButtonHandle = () => {
               <div style={{ overflow: "hidden" }}>
                 <div style={{ width: "99px" }}>
                   <div style={{ width: "110px" }}>
-                    < Ranking />
+                    <Ranking />
                     {/* <i className="fa fa-star fa-lg"></i>
                     <i className="fa fa-star fa-lg"></i>
                     <i className="fa fa-star fa-lg"></i>
@@ -61,13 +60,12 @@ clickedLikeButtonHandle = () => {
                 </div>
               </div>
               <div className="card-footer-badge">{this.props.card.rating}</div>
-             {/* < i className="fa fa-heart" onClick = {this.clickedLikeButtonHandle}></i>
+              {/* < i className="fa fa-heart" onClick = {this.clickedLikeButtonHandle}></i>
              {this.state.color} */}
-             <ToggleHeart key= {this.props.card.id} />
+              <ToggleHeart key={this.props.card.id} />
             </div>
           </div>
         </div>
-          
       </>
     );
   }

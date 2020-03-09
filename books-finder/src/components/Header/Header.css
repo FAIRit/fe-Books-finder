@@ -1,0 +1,14 @@
+.main-picture {
+    width:30%;
+    height: 30%;
+    margin: auto;
+    display: block;
+    
+}
+
+.logo  {
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin: 0 auto;
+}

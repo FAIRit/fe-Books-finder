@@ -3,7 +3,7 @@ export const BOOKS =
 children:[
 { id: 1, title: 'Bajkoterapia',author: ['Agnieszka Tyszka ',' Artur Barciś ',' Beata Ostrowicka ', ' Cezary Harasimowicz', 'Dorota Suwalska Grażyna Bąkiewicz', 'Janusz Leon Wiśniewski', 'Katarzyna Dowbor', 'Małgorzata Strękowska-Zaremba', 'Rafał Królikowski', 'Zofia Stanecka', 'Katarzyna Klimowicz', 'Ryszard Cebula'], publisher:'Nasza Księgarnia',
 description: 'Bajkoterapia czyli bajki-pomagajki dla małych i dużych to wspaniała propozycja zarówno dla rodziców, jak i nauczycieli, którzy chcą wspierać rozwój dziecka. Bo przecież dorastanie to nie tylko nabywanie umiejętności manualnych i szkolnej wiedzy. To także nauka tego, co należy robić w trudnych sytuacjach i jak radzić sobie z emocjami.', descriptionExtended: 'Przedstawiamy tu zatem tę niezwykłą antologię bajek, w których bohaterowie zmagać się muszą, z takimi kwestiami, jak: inność, spotkanie z nieznajomym, bezpieczeństwo nad wodą, zgubienie się, brak wiary w siebie, rywalizacja z rodzeństwem, bezpieczeństwo w domuDrugie, poprawione wydanie tej niezwykłej książki zawiera również wskazówki i komentarze eksperta od bajkoterapii, Katarzyny Klimowicz. Autorzy publikacji mają nadzieję, że zarówno poszczególne opowieści, jak i porady i wskazówki pomogą dzieciom i ich opiekunom w rozwiązywaniu problemów typowych w życiu przedszkolaka czy ucznia pierwszych klas podstawówki. Być może skłonią one do refleksji, być może zachęcą do rozmowy. Na pewno jednak ich czytanie dziecku na głos, sprawi, że ta jedyna w swoim rodzaju więź łącząca dziecko i dorosłego stanie się jeszcze silniejsza, a mały czytelnik poczuje się zrozumiany i bezpieczny.',
- imageUrl: 'images/dzieci/Bajkoterapia.jpg', rating: 2.7, keywords: ["wiara w siebie", "bezpieczeństwo" ,'strach' , 'wirtualny świat', 'samodzielność' ,'rodzeństwo', 'nieśmiałość' ,'inność', 'odrzucenie' ,'akceptacja' ,'integracja']},
+ imageUrl: 'images/Bajkoterapia.jpg', rating: 2.7, keywords: ["wiara w siebie", "bezpieczeństwo" ,'strach' , 'wirtualny świat', 'samodzielność' ,'rodzeństwo', 'nieśmiałość' ,'inność', 'odrzucenie' ,'akceptacja' ,'integracja']},
  { id:2,
  title: " Wielka księga uczuć",
  author : "Grzegorz Kasdepke",
@@ -17,100 +17,65 @@ description: 'Bajkoterapia czyli bajki-pomagajki dla małych i dużych to wspani
  title: " Uczę się rozumieć innych. Emocje i gesty",
  author : "Blok Beata, Brzeska Zofia, Marszałek Małgorzata",
  publisher: "Harmonia",
- imageUrl:"images/USRI emocje i gesty.jpg",
+ imageUrl:"images/emocje i gesty.jpg",
 description: "'Emocje i gesty' są drugą częścią cyklu 'Uczę się rozumieć innych'. W publikacji wykorzystano kilkadziesiąt zdjęć osób wyrażających w różny sposób podstawowe emocje, na przykład radość, smutek czy strach.",
-descriptionxteEnded: " Każda fotografia umieszczona jest na jednej stronie. Na sąsiedniej stronie znajduje się miniatura zdjęcia oraz pytania, które powinny być użyte w trakcie jej omawiania. Pomoc została tak pomyślana, że po złożeniu publikacji (jak stawia się kalendarz biurowy) można prezentować dziecku tylko zdjęcie. Pytania i polecenia są pomocą w nauce rozpoznawania, nazywania oraz wskazywania przyczyn pojawienia się różnorodnych stanów emocjonalnych w zależności od kontekstu sytuacyjnego. Książka powstała z myślą o kształtowaniu umiejętności ważnych dla rozwoju społecznego zarówno małych dzieci, jak i osób z zaburzeniami, na przykład ze spektrum autyzmu.",
+descriptionExtended: " Każda fotografia umieszczona jest na jednej stronie. Na sąsiedniej stronie znajduje się miniatura zdjęcia oraz pytania, które powinny być użyte w trakcie jej omawiania. Pomoc została tak pomyślana, że po złożeniu publikacji (jak stawia się kalendarz biurowy) można prezentować dziecku tylko zdjęcie. Pytania i polecenia są pomocą w nauce rozpoznawania, nazywania oraz wskazywania przyczyn pojawienia się różnorodnych stanów emocjonalnych w zależności od kontekstu sytuacyjnego. Książka powstała z myślą o kształtowaniu umiejętności ważnych dla rozwoju społecznego zarówno małych dzieci, jak i osób z zaburzeniami, na przykład ze spektrum autyzmu.",
  keywords:["miłość", "pogarda", "strach", "smutek", "przyjażń", "wstyd", "tęskonta", "gniew", "radość", "poczucie krzywdy", "nienawiść", "poczucie winy", "empatia", "szacunek", "odwaga", "uczciwość", "szczęście","zazdrość", "nuda"]},
  // "age":{}
 { id:4,
  title: "101 ćwiczeń, gier i zabaw dla dzieci z autyzmem, zespołem Aspergera i zaburzeniami integracji sensorycznej",
  author : "Delaney Tara",
  publisher: "Harmonia",
- imageUrl: "images/dzieci/101 ćwiczeń, gier i zabaw.jpg",
+ imageUrl: "images/101 ćwiczeń, gier i zabaw.jpg",
  description: "W książce '101 ćwiczeń, gier i zabaw dla dzieci z  autyzmem, zespołem Aspergera i zaburzeniami integracji sensorycznej' doświadczona terapeutka zajęciowa Tara Delaney podpowiada, jakie rodzaje aktywności sprzyjają rozwojowi dzieci i jak można się uczyć, świetnie się przy tym bawiąc. Zajęcia proponowane w książce zapewnią dziecku rozrywkę oraz prawidłową stymulację – a wiele z ćwiczeń można wykonywać zarówno w domu, jak i na dworze!",
  descriptionExtended: "",
  keywords:["integracja sensoryczna", "autyzm", "asperger"]},
  // "age":{}
+
+{ id:5,
+ title: "Włącz emocje. Opowiadania socjoterapeutyczne",
+ author : "Busz Anna",
+ publisher: "Harmonia",
+ imageUrl: "images/wlacz_emocje.jpg",
+ description: "Niniejsza książka stanowi pomoc w procesie kształtowania inteligencji emocjonalnej. Zawarte w niej opowiadania ułatwią dzieciom rozpoznawanie, zrozumienie i nazywanie emocji własnych, jak również innych osób. Wyzwolą chęć swobodnego wypowiadania swoich myśli oraz prawidłowego nawiązywania i podtrzymywania kontaktów międzyludzkich. Ponadto wyjaśnią, w jaki sposób można radzić sobie w sytuacjach trudnych oraz jak reagować w momentach słabości.",
+ descriptionExtended: "",
+ keywords:["EMOCJE", "empatia"]
+ // "age":{}
+},
+
+{ id:6,
+ title: "Pytam i odpowiadam - zestaw dla osób z zaburzeniami komunikacji językowej",
+ author : "Wianecka Elżbieta",
+ publisher: "Arson",
+ imageUrl: "images/pytam_i_odpowiadam.jpg",
+ description: "Terapia osób z autyzmem, zespołem Downa, Aspergera i innymi dysfunkcjami powodującymi trudności w zakresie komunikacji językowej.",
+ descriptionExtended: "Adresatami zestawu edukacyjnego Pytam i odpowiadam są osoby cierpiące na różnego rodzaju zaburzenia komunikacji językowej: W skład prezentowanego zestawu wchodzą następujące elementy: opis przykładowych ćwiczeń 20 plansz z kolorowymi rysunkami i pytaniami (dwustronnie zafoliowane, tekturowe, formatu A4), 80 etykietek zawierających odpowiedzi przeznaczone do układania na planszach",
+ keywords:["autyzm", "asperger", "zespół Downa", "logopedia", "afazja"]
+ // "age":{}, 
+},
+
+{ id:7,
+ title: "UCZĘ SIĘ ROZUMIEĆ INNYCH. PATRZENIE I WSKAZYWANIE",
+ author : "Blok Beata, Brzeska Zofia, Marszałek Małgorzata",
+ publisher: "Harmonia",
+ imageURL: "images/Patrzenie i wskazywanie.jpg",
+ description: "'Patrzenie i wskazywanie' jest pierwszą częścią cyklu 'Uczę się rozumieć innych'. Stanowi pomoc do uczenia jednych z podstawowych funkcji społecznych, jakimi są patrzenie na obiekty wskazywane przez inne osoby oraz podążanie za wzrokiem drugiej osoby. Umiejętności te są jedną z podwalin prawidłowego rozwoju społecznego. Publikacja zawiera zestaw zdjęć przedstawiających osoby dorosłe oraz dzieci w różnych sytuacjach społecznych. Pokazują oni i patrzą na różne obiekty. Każda fotografia umieszczona jest na jednej stronie. Na sąsiedniej stronie znajduje się miniatura zdjęcia oraz pytania, które powinny być użyte w trakcie jej omawiania. Pomoc została tak pomyślana, że po złożeniu publikacji (jak stawia się kalendarz biurowy) można prezentować dziecku tylko zdjęcie. Konstrukcja pytań i poleceń umożliwia pracę zarówno z dzieckiem mówiącym, jak i niemówiącym lub mającym problemy z adekwatnym wysławianiem się.",
+ descriptionExtended: "",
+ keywords:["komunikacja"]
+ // "age":{}
+},
+
+{ id:8,
+ title: "UCZĘ SIĘ ROZUMIEĆ INNYCH. MÓWIENIE I MYŚLENIE",
+ author: "Blok Beata, Brzeska Zofia, Marszałek Małgorzata, Radtke-Michalewska Katarzyna",
+ publisher: "Harmonia",
+ imgageURL: "images/Mówienie_i_myślenie.jpg",
+ description: "'Mówienie i myślenie' jest trzecią częścią cyklu 'Uczę się rozumieć innych'. Publikacja służy nauce zrozumienia zasad rządzących komunikacją międzyludzką oraz doskonaleniu umiejętności prawidłowego interpretowania dialogów prowadzonych w różnych kontekstach sytuacyjnych. W książce znajduje się zbiór zdjęć przedstawiających osoby w rozmaitych sytuacjach oraz wyrażających wiele emocji, takich jak: szczęście, smutek, niedowierzanie, zazdrość, współczucie czy żal. ",
+ descriptionExtended: "Na sąsiednich stronach znajduje się duże zdjęcie oraz jego miniatura wraz z zadaniami dla dziecka. W ramach ćwiczeń dzieci przyporządkowują wypowiedzi do osób ze zdjęcia, dobierają lub wymyślają dialogi pasujące do przedstawionych sytuacji, zastanawiają się, o czym mogą myśleć ukazane osoby. Na końcu książki znajdują się karty z wypowiedziami osób (w dymkach) oraz z towarzyszącymi tym wypowiedziom myślami (w chmurkach), będącymi kopią zdań umieszczonych przy każdym zdjęciu. Wypowiedzi i myśli służą do samodzielnego układania ich na fotografii, zgodnie z kontekstem. Karty te można skopiować, wyciąć potrzebne elementy, a następnie dopasować je do zdjęcia, kładąc obok osób, które wypowiedziały lub pomyślały dane słowa. Publikacja ma na celu kształtowanie umiejętności ważnych dla rozwoju społecznego zarówno małych dzieci, jak i osób z zaburzeniami, na przykład ze spektrum autyzmu.",
+ keywords:["autyzm", "rozwój społeczny", "szczeście", "smutek", "żal", "współczucie"]
+ // "age":{}
+},
 ],
-
-
-// { "id":5,
-//  "data":{
-//  "title": "Włącz emocje. Opowiadania socjoterapeutyczne",
-//  "author" : "Busz Anna",
-//  "publisher": "Harmonia",
-//  "img": ""
-//  },
-//  "descriptions":{
-//  "description-basic": "Niniejsza książka stanowi pomoc w procesie kształtowania inteligencji emocjonalnej. Zawarte w niej opowiadania ułatwią dzieciom rozpoznawanie, zrozumienie i nazywanie emocji własnych, jak również innych osób. Wyzwolą chęć swobodnego wypowiadania swoich myśli oraz prawidłowego nawiązywania i podtrzymywania kontaktów międzyludzkich. Ponadto wyjaśnią, w jaki sposób można radzić sobie w sytuacjach trudnych oraz jak reagować w momentach słabości.",
-//  "description-extended": ""
-//  },
-//  "keywords":["EMOCJE", "empatia"]
-//  // "age":{}
-// }
-
-// { "id":6,
-//  "data":{
-//  "title": "Pytam i odpowiadam - zestaw dla osób z zaburzeniami komunikacji językowej",
-//  "author" : "Wianecka Elżbieta",
-//  "publisher": "Arson",
-//  "img": ""
-//  },
-//  "descriptions":{
-//  "description-basic": "Terapia osób z autyzmem, zespołem Downa, Aspergera i innymi dysfunkcjami powodującymi trudności w zakresie komunikacji językowej.",
-//  "description-extended": "Adresatami zestawu edukacyjnego Pytam i odpowiadam są osoby cierpiące na różnego rodzaju zaburzenia komunikacji językowej:
-
-//  dzieci z autyzmem, zespołem Aspergera lub Downa
-//  dzieci z alalią, afazją
-//  dzieci wykazujące obniżny poziom sprawności intelektualnej
-//  dzieci z porażeniem mózgowym, opóźnionym rozwojem mowy
-//  dzieci dotknięte SLI
-//  dzieci borykające się z zaburzeniami słuchu
-//  osoby dorosłe z afazją
-//  Jak budować poprawne gramatycznie zdania? Konieczna do tego jest umiejętność nie tylko rozumienia znaczenia pytań, lecz także ich prawidłowego użycia w rozmaitych kontekstach, w zależności od danej sytuacji. I właśnie tutaj z pomocą przychodzą etykietki z odpowiedziami na pytania. Wspierają one nabywanie przez dziecko wspomnianych umiejętności, natomiast ilustracje pomagają w zrozumieniu treści zdań.
- 
-//  W skład prezentowanego zestawu wchodzą następujące elementy:
- 
-//  opis przykładowych ćwiczeń
-//  20 plansz z kolorowymi rysunkami i pytaniami (dwustronnie zafoliowane, tekturowe, formatu A4)
-//  80 etykietek zawierających odpowiedzi przeznaczone do układania na planszach"
-//  },
-//  "keywords":["autyzm", "asperger", "zespół Downa", "logopedia", "afazja"]
-//  // "age":{}, 
-// }
-
-// { "id":7,
-//  "data":{
-//  "title": "UCZĘ SIĘ ROZUMIEĆ INNYCH. PATRZENIE I WSKAZYWANIE",
-//  "author" : "Blok Beata, Brzeska Zofia, Marszałek Małgorzata",
-//  "publisher": "Harmonia",
-//  "img": ""
-//  },
-//  "descriptions":{
-//  "description-basic": "'Patrzenie i wskazywanie' jest pierwszą częścią cyklu 'Uczę się rozumieć innych'. Stanowi pomoc do uczenia jednych z podstawowych funkcji społecznych, jakimi są patrzenie na obiekty wskazywane przez inne osoby oraz podążanie za wzrokiem drugiej osoby. Umiejętności te są jedną z podwalin prawidłowego rozwoju społecznego. Publikacja zawiera zestaw zdjęć przedstawiających osoby dorosłe oraz dzieci w różnych sytuacjach społecznych. Pokazują oni i patrzą na różne obiekty. Każda fotografia umieszczona jest na jednej stronie. Na sąsiedniej stronie znajduje się miniatura zdjęcia oraz pytania, które powinny być użyte w trakcie jej omawiania. Pomoc została tak pomyślana, że po złożeniu publikacji (jak stawia się kalendarz biurowy) można prezentować dziecku tylko zdjęcie. Konstrukcja pytań i poleceń umożliwia pracę zarówno z dzieckiem mówiącym, jak i niemówiącym lub mającym problemy z adekwatnym wysławianiem się.",
-//  "description-extended": ""
-//  },
-//  "keywords":["komunikacja"]
-//  // "age":{}
-// }
-
-// { "id":8,
-//  "data":{
-//  "title": "UCZĘ SIĘ ROZUMIEĆ INNYCH. MÓWIENIE I MYŚLENIE",
-//  "author" : "Blok Beata, Brzeska Zofia, Marszałek Małgorzata, Radtke-Michalewska Katarzyna",
-//  "publisher": "Harmonia",
-//  "img": ""
-//  },
-//  "descriptions":{
-//  "description-basic": "'Mówienie i myślenie' jest trzecią częścią cyklu 'Uczę się rozumieć innych'. Publikacja służy nauce zrozumienia zasad rządzących komunikacją międzyludzką oraz doskonaleniu umiejętności prawidłowego interpretowania dialogów prowadzonych w różnych kontekstach sytuacyjnych. W książce znajduje się zbiór zdjęć przedstawiających osoby w rozmaitych sytuacjach oraz wyrażających wiele emocji, takich jak: szczęście, smutek, niedowierzanie, zazdrość, współczucie czy żal. ",
-//  "description-extended": "Na sąsiednich stronach znajduje się duże zdjęcie oraz jego miniatura wraz z zadaniami dla dziecka. W ramach ćwiczeń dzieci przyporządkowują wypowiedzi do osób ze zdjęcia, dobierają lub wymyślają dialogi pasujące do przedstawionych sytuacji, zastanawiają się, o czym mogą myśleć ukazane osoby. Na końcu książki znajdują się karty z wypowiedziami osób (w dymkach) oraz z towarzyszącymi tym wypowiedziom myślami (w chmurkach), będącymi kopią zdań umieszczonych przy każdym zdjęciu. Wypowiedzi i myśli służą do samodzielnego układania ich na fotografii, zgodnie z kontekstem. Karty te można skopiować, wyciąć potrzebne elementy, a następnie dopasować je do zdjęcia, kładąc obok osób, które wypowiedziały lub pomyślały dane słowa.
-
-//  Publikacja ma na celu kształtowanie umiejętności ważnych dla rozwoju społecznego zarówno małych dzieci, jak i osób z zaburzeniami, na przykład ze spektrum autyzmu."
-//  },
-//  "keywords":["autyzm", "rozwój społeczny", "szczeście", "smutek", "żal", "współczucie"]
-//  // "age":{}
-// }
-
 // { "id":9,
 //  "data":{
 //  "title": "ZABAWY DLA DZIECI Z AUTYZMEM",

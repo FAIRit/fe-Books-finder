@@ -1,17 +1,19 @@
 import React, {Component} from "react";
 import "./BookCard.css";
 
+
+
 class BookCard extends Component  {
   constructor (props) {
     super(props);
     this.state = {
       showExtended : false,
-    }
-    
+    }   
   }
-extendButtonHandle = () => {
+
+clickedButtonHandle = () => {
   this.setState ({
-showExtended: true
+showExtended: this.props.card.descriptionExtended,
   })
 }
   
@@ -21,22 +23,20 @@ render () {
   <div className="book-card">
     <div className="book-card card">
       <img
-        src={props.imageUrl}
+        src={this.props.card.imageUrl}
         alt=""class
       />
       <div>
-        <h2>{props.title}</h2>
-        <h3>{props.author}</h3>
-        <h4>{props.publisher}</h4>
+        <h2>{this.props.card.title}</h2>
+        <h3>{this.props.card.author}</h3>
+        <h4>{this.props.card.publisher}</h4>
         <p className="book-card-description" style={{ fontSize: "14px" }}>
-          {props.description}
+          {this.props.description}
         </p>
-        <button onClick= {this.extendButtonHandle} className = "book-card-description-extended-button" >
-          <p>Pokaż więcej</p>
+
+        <button onClick ={this.clickedButtonHandle}>
+          Pokaż więcej
         </button>
-        <p className="book-card-description-extended" style={{ fontSize: "14px" }}>
-          {props.descriptionExtended}
-        </p>
       </div>
       <div className="card-footer">
         <div style={{ overflow: "hidden" }}>
@@ -50,7 +50,7 @@ render () {
             </div>
           </div>
         </div>
-        <div className="card-footer-badge">{props.rating}</div>
+        <div className="card-footer-badge">{this.props.card.rating}</div>
         <i class="fa fa-heart"></i>
       </div>
     </div>

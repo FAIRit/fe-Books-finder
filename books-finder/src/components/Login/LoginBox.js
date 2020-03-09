@@ -5,14 +5,17 @@ import './LoginBox.css';
 class LoginBox extends Component {
 constructor  (props) {
   super(props);
-  this.state = {};
-  this.routeChange = this.routeChange.bind(this)
+  this.state = {
+route: './'
+  };
+
 }
-routeChange() {
-  let path = `newPath`;
-  this.props.history.push(path);
+routeChange =() => {
+this.setState ({
+route: './RegisterBox.js'
+  })
+
 }
-  //submitLogin(e) {};
 
   render() {
   return (
@@ -64,12 +67,6 @@ Zaloguj
         className="register-btn"
         onClick={this.routeChange}
         >
-        {/* onClick={event =>
-        (window.location.href = "../Login/RegisterBox.js")}> */}
-      {/* onClick = {event =>  window.location.href ='/Login/RegisterBox.js'}> */}
-       {/* onClick={this */}
-        {/* .submitLogin
-        .bind(this)}> */}
                 Zarejestruj się
       </button>
       </div>

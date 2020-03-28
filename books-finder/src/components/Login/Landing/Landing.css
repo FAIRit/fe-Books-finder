@@ -1,6 +1,10 @@
+
+
+
+
 .main-picture {
-    width:30%;
-    height: 30%;
+    width:10%;
+    height: 10%;
     margin: auto;
     display: block;
     
@@ -9,8 +13,8 @@
 
 
 .logo  {
-    width: 30%;
-    height: 30%;
+    width: 10%;
+    height: 10%;
     display: block;
     margin: 0 auto;
 }

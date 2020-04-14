@@ -28,6 +28,7 @@ class Filters extends Component {
       category: event.target.value
     });
   };
+
   onTitleFilterChanged = event => {
     console.log(24, "test");
     this.props.onTitleFilterChanged(event.target.value);
@@ -118,16 +119,16 @@ class Filters extends Component {
         <div className={styles.filters}>
           <Grid container spacing={2} style= {{marginTop:30}}>
             <Grid item xs={6} md={3}>
-              <TextField id="outlined-basic" label="Tytuł" variant="outlined" onChange={this.onTitleFilterChanged} />
+              <TextField size="small" id="outlined-basic" label="Tytuł" variant="outlined" onChange={this.onTitleFilterChanged} />
             </Grid>
             <Grid item xs={6} md={3}>
-              <TextField id="outlined-basic" label="Autor" variant="outlined"onChange={this.onAuthorFilterChanged} />
+              <TextField size="small" id="outlined-basic" label="Autor" variant="outlined"onChange={this.onAuthorFilterChanged} />
             </Grid>
             <Grid item xs={6} md={3}>
-              <TextField id="outlined-basic" label="Wydawnictwo" variant="outlined" onChange={this.onPublisherFilterChanged} />
+              <TextField size="small" id="outlined-basic" label="Wydawnictwo" variant="outlined" onChange={this.onPublisherFilterChanged} />
             </Grid>
             <Grid item xs={6} md={3}>
-              <TextField id="outlined-basic" label="Słowo kluczowe" variant="outlined" onChange={this.onKeyWordsFilterChanged} />
+              <TextField size="small" id="outlined-basic" label="Słowo kluczowe" variant="outlined" onChange={this.onKeyWordsFilterChanged} />
             </Grid>
             </Grid>
             <Grid item xs={6} md={2}>

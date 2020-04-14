@@ -8,8 +8,6 @@ import Container from '@material-ui/core/Container';
 import firebase from 'firebase';
 import {Redirect} from "react-router";
 import {Link} from 'react-router-dom';
-import UserProvider from "../UserProvider";
-import Navigation from "../Navigation/";
 
 class Sign extends Component {
     state = {
@@ -71,14 +69,10 @@ class Sign extends Component {
 
         return (
             <>
-            <UserProvider>
-                {(user) => {
-                    return user
-                    ? <h2 style={{textAlign: "center", marginTop: 20}}>You are already logged in!</h2>
-                    : <Container component="main" maxWidth="xs">
+                    <Container component="main" maxWidth="xs">
                             <div style={{marginTop: 30, textAlign: "center"}}>
                                 <Typography component="h1" variant="h5">
-                                    {this.props.isSignUp ? 'Sign up' : 'Sign in'}
+                                    {this.props.isSignUp ? 'Zarejestruj się' : 'Zaloguj się'}
                                 </Typography>
                                 <form noValidate onSubmit={this.handleOnSubmit}>
                                     <TextField
@@ -87,7 +81,7 @@ class Sign extends Component {
                                         required
                                         fullWidth
                                         id="email"
-                                        label="Email Address"
+                                        label="adres e-mail"
                                         name="email"
                                         autoComplete="email"
                                         autoFocus
@@ -100,7 +94,7 @@ class Sign extends Component {
                                         required
                                         fullWidth
                                         name="password"
-                                        label="Password"
+                                        label="hasło"
                                         type="password"
                                         id="password"
                                         autoComplete="current-password"
@@ -109,26 +103,24 @@ class Sign extends Component {
                                     />
                                     <FormControlLabel
                                         control={<Checkbox value="remember" color="primary" />}
-                                        label="Remember me"
+                                        label="Zapamiętaj mnie"
                                     />
                                     <Button
                                         type="submit"
                                         fullWidth
                                         variant="contained"
-                                        color="primary"
+                                        style = {{backgroundColor:'#6C63FF'}}
                                     >
                                         {this.props.isSignUp ? 'Sign up' : 'Sign in'}
                                     </Button>
                                     {
                                         this.props.isSignUp
-                                            ? <Link to="/sign-in">Do you have an account? Sign In</Link>
-                                            : <Link to="/sign-up">Don't have an account? Sign Up</Link>
+                                            ? <Link to="/sign-in">Masz konto? Zaloguj się</Link>
+                                            : <Link to="/sign-up">Nie masz konta? Zarejestruj się</Link>
                                     }
                                 </form>
                             </div>
                         </Container>;
-                }}
-            </UserProvider>
             </>
         );
     }

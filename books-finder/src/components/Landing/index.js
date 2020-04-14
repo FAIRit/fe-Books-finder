@@ -18,10 +18,11 @@ class Landing extends Component {
       return <Redirect to="/sign-in" />;
     }
     return (
+       
       <UserProvider>
         {user => {
           return (
-            <div className={styles.landing}>
+           <div className={styles.landing}>
               <img
                 className={styles.mainPicture}
                 src="images/undraw_book_lover_mkck.svg"
@@ -35,7 +36,9 @@ class Landing extends Component {
             </div>
           );
         }}
+       
       </UserProvider>
+       
     );
   }
 }

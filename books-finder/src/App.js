@@ -1,32 +1,17 @@
-import React from 'react';
-import { BrowserRouter, NavLink, Switch, Route } from "react-router-dom";
-import LandingPage from "./components/LandingPage/LandingPage";
-import ChooseCategory from "./components/Search/ChooseCategory";
-import Logged from "./components/Login/Logged";
-import MultipleSelect from "./components/Search/MultipleSelect";
-
-
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import Navigation from "./components/Navigation/";
+import Content from "./components/Content";
 
 function App() {
   return (
-  <div className="app">
-      <BrowserRouter>
-        <div className={'tabs'}>
-          <NavLink to="/">Strona główna</NavLink>
-          <NavLink to="/ChooseCategory">Wyszukaj</NavLink>
-          <NavLink to="/Logged">Panel użytkownika</NavLink>
-          {/* <NavLink to="/MultipleSelect">Filtr</NavLink> */}
-      </div>
-      <div className = "container">
-      <Switch>
-        <Route path="/" exact={true} component ={LandingPage}/>
-         <Route path="/Logged" exact={true} component ={Logged} />
-        <Route path="/ChooseCategory" exact={true} component = {ChooseCategory} />
-        {/* <Route path="/MultipleSelect" exact={true} component ={MultipleSelect} /> */}
-      </Switch>
-      </div>
-    </BrowserRouter>
-    </div>
+    <Router>
+      <Home /> 
+      <Content />
+      <Navigation />
+    </Router>
   );
 }
 

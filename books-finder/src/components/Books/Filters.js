@@ -1,12 +1,4 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
-import { Input, Select, MenuItem, Button } from "@material-ui/core";
-import style from "./Books.module.css";
-
-class Filters extends Component {
-  state = {
-    category: "all",
-=======
 import {
   Input,
   Select,
@@ -24,33 +16,21 @@ import styles from "./Books.module.css";
 class Filters extends Component {
   state = {
     category: "all"
->>>>>>> roboczy-branch
     // title: " ",
     // author: " ",
     // publisher: " ",
     // keyword: " "
   };
-<<<<<<< HEAD
-
-=======
->>>>>>> roboczy-branch
   handleCategoryButton = event => {
     this.props.handleCategoryButton(event.target.value);
     this.setState({
       ...this.state,
-<<<<<<< HEAD
-      category: event.target.value,
+      category: event.target.value
     });
   };
 
   onTitleFilterChanged = event => {
-=======
-      category: event.target.value
-    });
-  };
-  onTitleFilterChanged = event => {
     console.log(24, "test");
->>>>>>> roboczy-branch
     this.props.onTitleFilterChanged(event.target.value);
   };
   onKeywordsFilterChanged = event => {
@@ -62,32 +42,6 @@ class Filters extends Component {
   onPublisherFilterChanged = event => {
     this.props.onPublisherFilterChanged(event.target.value);
   };
-<<<<<<< HEAD
-  render() {
-    const { category
-      // , title, keywords, author, publisher
-     } = this.state;
-
-    return (
-      <>
-        <div className={style.categoryButtons}>
-          <form onClick={this.handleCategoryButton} value={category}>
-            <Button value="children">Książki dla dzieci</Button>
-            <Button value="teachers">Książki dla pedagogów/terapeutów</Button>
-            <Button value="parents">Książki dla rodziców</Button>
-          </form>
-        </div>
-        <div className={style.filters}>
-          TYTUŁ
-          <Input onChange={this.onTitleFilterChanged} />
-          AUTOR
-          <Input onChange={this.onAuthorFilterChanged} />
-          WYDAWNICTWO
-          <Input onChange={this.onPublisherFilterChanged} />
-          SŁOWO KLUCZOWE
-          <Input onChange={this.onKeyWordsFilterChanged} />
-        </div>
-=======
   onKeyWordsFilterChanged = event => {
     this.props.onKeywordsFilterChanged(event.target.value);
   };
@@ -165,16 +119,16 @@ class Filters extends Component {
         <div className={styles.filters}>
           <Grid container spacing={2} style= {{marginTop:30}}>
             <Grid item xs={6} md={3}>
-              <TextField id="outlined-basic" label="Tytuł" variant="outlined" onChange={this.onTitleFilterChanged} />
+              <TextField size="small" id="outlined-basic" label="Tytuł" variant="outlined" onChange={this.onTitleFilterChanged} />
             </Grid>
             <Grid item xs={6} md={3}>
-              <TextField id="outlined-basic" label="Autor" variant="outlined"onChange={this.onAuthorFilterChanged} />
+              <TextField size="small" id="outlined-basic" label="Autor" variant="outlined"onChange={this.onAuthorFilterChanged} />
             </Grid>
             <Grid item xs={6} md={3}>
-              <TextField id="outlined-basic" label="Wydawnictwo" variant="outlined" onChange={this.onPublisherFilterChanged} />
+              <TextField size="small" id="outlined-basic" label="Wydawnictwo" variant="outlined" onChange={this.onPublisherFilterChanged} />
             </Grid>
             <Grid item xs={6} md={3}>
-              <TextField id="outlined-basic" label="Słowo kluczowe" variant="outlined" onChange={this.onKeyWordsFilterChanged} />
+              <TextField size="small" id="outlined-basic" label="Słowo kluczowe" variant="outlined" onChange={this.onKeyWordsFilterChanged} />
             </Grid>
             </Grid>
             <Grid item xs={6} md={2}>
@@ -191,7 +145,6 @@ class Filters extends Component {
             </div>
       
  
->>>>>>> roboczy-branch
       </>
     );
   }

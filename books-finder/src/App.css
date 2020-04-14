@@ -1,14 +1,14 @@
 :root {
-    --nav-width-plus-margin: 250px;
+    --nav-width-plus-margin: 240px;
   } 
 
 .main-container {
-    margin: 70px 30px 0px var(--nav-width-plus-margin);
+    margin: 80px 30px 0px var(--nav-width-plus-margin);
     text-align: justify;
 }
 
 @media (max-width: 600px) {
-    .main-container.small {
+    .main-container {
         margin: 20px 20px 0px 20px;
     }
 }

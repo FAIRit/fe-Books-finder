@@ -50,13 +50,13 @@ class Content extends Component {
     
     return (
         <Switch>
-          {/* <Route path="/">
+          <Route exact path="/home">
           <Home />
-        </Route> */}
-          <Route path="/sign-up">
+        </Route>
+          <Route exact path="/sign-up">
             <Sign isSignUp />
           </Route>
-          <Route path="/sign-in">
+          <Route exact path="/sign-in">
             <Sign />
           </Route>
           <Route exact
@@ -71,17 +71,17 @@ class Content extends Component {
               />
             )}
           />
-          <Route path="/clinics">
+          <Route exact path="/clinics">
             <Clinics />
           </Route>
           <Route
-                  path="/userpanel"
+                  exact path="/userpanel"
                   component={() => (
                     <UserPanel
                      favouriteBooks={favouriteBooks} />
                   )}
                 />
-          <Route path="/aboutus">
+          <Route exact path="/aboutus">
             <AboutUs />
           </Route>
           <Route path="/books/:id" component={BooksDetails} />

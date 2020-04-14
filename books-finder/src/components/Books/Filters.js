@@ -149,10 +149,6 @@ class Filters extends Component {
     );
   }
 }
-<<<<<<< HEAD
-
-export default Filters;
-=======
 export default Filters;
 // class Filters extends Component {
 //   state = {
@@ -207,4 +203,3 @@ export default Filters;
 // }
 
 // export default Filters;
->>>>>>> roboczy-branch

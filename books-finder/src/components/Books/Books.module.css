@@ -29,6 +29,182 @@
 .filters {
     text-align: center;
     justify-content: space-around;
+<<<<<<< HEAD
 
 }
 
+=======
+    
+
+}
+
+.pictures {
+    width: auto;
+    height: 180px;
+}
+
+
+.media{
+   text-align:center;
+    height:150;
+  }
+  .header {
+      display: inline-block;
+  }
+
+  .title {
+      font-size: 4rem;
+     height: 160px;
+  }
+
+.paper {
+    position: relative;
+    /* top: 60px; */
+    height: 570px;
+    margin: 20px;
+    display: inline-block;
+}
+.categoryButtons {
+    text-align: center;
+}
+
+.bottom {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+  bottom: 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+}
+.category {
+justify-content: space-between;
+}
+
+.removeButton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text {
+    margin-top:10px;
+    padding:1rem;
+    text-align:justify;
+    height:140px,
+    }
+
+
+@media (max-width: 500px) {
+
+    .paper {
+        /* height: 100vh; */
+        margin: 0 auto;
+
+    }
+    /* .title {
+        font-size: 3rem;
+       height: 120px;
+    }
+
+    .media{
+        text-align:center;
+         height:100;
+
+    }
+    .text {
+        /* margin-top:10px;
+        padding:1rem;
+        text-align:justify; */
+        /* height:100px;
+        } */
+} 
+@media (max-width: 600px) {
+
+    .paper {
+        /* height: 550px; */
+        margin: 10px;
+    }
+    .title {
+        /* font-size: 3rem; */
+       height: 120px;
+    }
+/* 
+    .media{
+        text-align:center;
+         height:100;
+
+    }
+    .text {
+        /* margin-top:10px;
+        padding:1rem;
+        text-align:justify; */
+        /* height:100px;
+        } */ 
+} 
+@media (max-width: 800px) {
+
+    .paper {
+        height: 600px;
+        margin: 10px;
+    }
+    .title {
+        font-size: 2.5rem;
+       height: 120px;
+    }
+
+    .media{
+        text-align:center;
+         height:100;
+
+    }
+    .text {
+        /* margin-top:10px;
+        padding:1rem;
+        text-align:justify; */
+        height:100px;
+        }
+}
+@media (max-width: 1000px) {
+
+    .paper {
+        height: 770px;
+        margin: 10px;
+    }
+    /* .title {
+        font-size: 3rem;
+       height: 120px;
+    }
+
+    .media{
+        text-align:center;
+         height:100;
+
+    }
+    .text {
+        /* margin-top:10px;
+        padding:1rem;
+        text-align:justify; */
+        /* height:100px;
+        } */
+} 
+@media (max-width: 1300px) {
+
+    .paper {
+        height: 670px;
+        margin: 10px;
+    }
+    /* .title {
+        font-size: 3rem;
+       height: 120px;
+    }
+
+    .media{
+        text-align:center;
+         height:100;
+
+    }
+    .text {
+        /* margin-top:10px;
+        padding:1rem;
+        text-align:justify; */
+        /* height:100px;
+        } */
+} 
+>>>>>>> roboczy-branch

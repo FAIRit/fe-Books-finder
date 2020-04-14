@@ -1,0 +1,22 @@
+.landing {
+    width: 100vw;
+    height: 100vh;
+    /* margin:20px 60px; */
+    text-align: justify;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    background-color:#6C63FF;
+  }
+  
+  
+  
+  .mainPicture {
+      width:350px;
+      height: 350px;
+      margin: 120px auto;
+      display: block;
+      background-color:#6C63FF;
+  
+      
+  }

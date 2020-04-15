@@ -15,12 +15,10 @@ class FavouriteBooksPanel extends React.Component {
 
   render() {
     return (
-      <Paper elevation={3}
-    //    className={styles.paperLong}
-       >
-        <Grid container>
+      <>
+        <Grid container spacing= {2}>
           <Grid item>
-            <Typography variant="body1" style={{ margin: "15px 0" }}>
+            <Typography variant="h5" style={{ margin: "15px 0" }}>
               Moje ulubione książki:
             </Typography>
             <Grid container
@@ -32,14 +30,14 @@ class FavouriteBooksPanel extends React.Component {
             {this.state.favouriteBooks.map(book => {
             //   {console.log(animal.data.type)}
               return (
-                <Grid item>
+                <Grid item sm={3} style = {{height:200}}>
                 <Card>
                   <img 
                 //   className={styles.favouriteImage}
-                   src={book.data.imageURL} alt="zwierzak"/>
+                   src={book.data.imageURL} alt="książka" style = {{width:200, textAlign:"center"}}/>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      book.data.title}
+                      {book.data.title}
                     </Typography>
                   </CardContent>
                 </Card>
@@ -49,7 +47,7 @@ class FavouriteBooksPanel extends React.Component {
             </Grid>
           </Grid>
         </Grid>
-      </Paper>
+      </>
     );
   }
 }

@@ -18,7 +18,9 @@ class Home extends Component {
       return <Redirect to="/sign-in" />;
     }
     return (
+ 
       <UserProvider>
+
         {user => {
           return (
             <div className={styles.landing}>
@@ -35,7 +37,9 @@ class Home extends Component {
             </div>
           );
         }}
+        
       </UserProvider>
+  
     );
   }
 }

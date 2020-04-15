@@ -90,8 +90,10 @@ export default () => {
                        {user && <Avatar color="primary" style = {{marginRight:30}} />}
   {user ? (
         <Button
-          variant="contained"
-          color="secondary"
+        size="large"
+        style={{marginRight:20}}
+          // variant="contained"
+          // color="secondary"
           onClick={handleSignOut}
         >
           Wyloguj się

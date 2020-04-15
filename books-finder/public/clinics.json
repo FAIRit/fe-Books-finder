@@ -1,0 +1,107 @@
+{
+    "type": "Poradnie",
+    "crs": {
+      "type": "name",
+      "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+    },
+    "features": [
+      {
+        "type": "Poradnia",
+        "properties": {
+          "PARK_ID": 1,
+          "NAME": "Gdańska Poradnia Psychologiczno-Pedagogiczna Lingwista",
+          "NAME_FR": "Planchodrome Bearbrook",
+          "ADDRESS": "Św. Barbary 1",
+          "ADDRESS_FR": "80-753 Gdańsk"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [54.348459, 18.663474]
+        }
+      }
+    ]
+}
+
+
+
+
+
+
+
+
+Gdańska Poradnia Psychologiczno-Pedagogiczna "Lingwista"
+Św. Barbary 1
+80-753 Gdańsk
+tel. 58 303 33 00
+Instytut Wspomagania Rozwoju Dziecka Niepubliczna Poradnia Psychologiczno-Pedagogiczna
+Malczewskiego 139
+80-114 Gdańsk
+tel. 58 341 44 41
+Niepubliczna Poradnia Psychologiczno-Pedagogiczna CG
+Sztormowa 9
+80-335 Gdańsk
+tel. 58 559 00 66
+Niepubliczna Poradnia Psychologiczno-Pedagogiczna Didisi
+Balcerskiego 18 C
+80-289 Gdańsk
+tel. 501 718 450
+Niepubliczna Poradnia Psychologiczno-Pedagogiczna Małe Lwy
+Meissnera 13
+80-462 Gdańsk
+tel. 505 050 850
+Niepubliczna Poradnia Psychologiczno-Pedagogiczna ODITIS
+Jeleniogórska 18/1
+80-180 Gdańsk
+tel. 795 596 629
+Niepubliczna Poradnia Psychologiczno-Pedagogiczna Wyspa
+Kartuska 214
+80-122 Gdańsk
+tel. 58 736 54 00
+Niepubliczna Poradnia Wspomagania Rozwoju "Po Drodze"
+Jagiellońska 11
+80-371 Gdańsk
+tel. 517 494 714
+Polskie Towarzystwo Dysleksji Poradnia Diagnostyczno - Terapeutyczna
+Legionów 11
+80-441 Gdańsk
+tel. 58 341 06 97
+Poradnia Psychologiczno-Pedagogiczna "Osiek"
+Osiek 11/11
+80-842 Gdańsk
+tel. 58 306 77 20
+Poradnia Psychologiczno-Pedagogiczna Instytut Dobrej Edukacji
+Chłopska 64
+80-350 Gdańsk
+tel. 661 966 696
+Poradnia Psychologiczno-Pedagogiczna nr 1
+Obywatelska 1
+80-259 Gdańsk
+tel. 58 341 87 58
+Poradnia Psychologiczno-Pedagogiczna nr 3 w Gdańsku
+Wałowa 21
+80-858 Gdańsk
+tel. 58 301 07 21
+Poradnia Psychologiczno-Pedagogiczna nr 4 w Gdańsku
+L. Krzemienieckiej 1
+80-448 Gdańsk
+tel. 58 341 05 42
+Poradnia Psychologiczno-Pedagogiczna nr 5
+Związku Jaszczurczego 4
+80-288 Gdańsk
+tel. 58 348 72 82
+PORADNIA PSYCHOLOGICZNO-PEDAGOGICZNA nr 6
+Lenartowicza 21
+80-704 Gdańsk
+tel. 58 301 18 15
+Poradnia Psychologiczno-Pedagogiczna nr 7
+Traugutta 82
+80-229 Gdańsk
+tel. 58 341 39 50
+Poradnia Psychologiczno-Pedagogiczna PEGAZ
+Powstańców Warszawskich 71
+80-170 Gdańsk
+tel. 533 287 007
+Specjalistyczna Poradnia Psychologiczno-Pedagogiczna "Tęcza"
+Korzeniowskiego 1
+80-508 Gdańsk
+tel. 58 340 38 29

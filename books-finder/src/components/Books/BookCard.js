@@ -122,7 +122,7 @@ function BookCard (props)  {
             <div className = {styles.bottom}>
             <IconButton
           aria-label="add to favorites"
-          style={{ color: isFavourite ? "#fda8c9" : "#3c3d47", paddingRight:20 }}
+          style={{ color: isFavourite ? "rgba(217, 30, 24, 1)" : "#3c3d47"}}
           onClick={() => {
             props.onAddToFavourite(book, isFavourite);
           }}
@@ -132,9 +132,8 @@ function BookCard (props)  {
           <Button
            variant="outlined"
            onClick={handleClickOpen}
-          //  href={`books/${book.id}`}
+           style ={{marginLeft:40}}
            >
-           {/* <NavLink to={`books/${book.id}`}>{book.title}</NavLink> */}
             Pokaż więcej
           </Button> 
   </div> 
@@ -182,7 +181,7 @@ function BookCard (props)  {
       </DialogContent>   
              <IconButton
           aria-label="add to favorites"
-          style={{ color: isFavourite ? "#fda8c9" : "#3c3d47", paddingRight:20 }}
+          style={{ color: isFavourite ? "rgba(217, 30, 24, 1)" : "#3c3d47"}}
           onClick={() => {
             props.onAddToFavourite(book, isFavourite);
           }}

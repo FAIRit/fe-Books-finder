@@ -1,11 +1,9 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
-import firebase from "firebase";
 import styles from "./Navigation.module.css";
 import UserProvider from "../UserProvider";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import Hidden from "@material-ui/core/Hidden";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
@@ -22,7 +20,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import InfoIcon from "@material-ui/icons/Info";
 import TopBar from "./TopBar";
 import "../../App.css";
-const drawerWidth = '240';
+const drawerWidth = '250';
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex"
@@ -33,12 +31,6 @@ const useStyles = makeStyles(theme => ({
       flexShrink: 0
     }
   },
-  //   appBar: {
-  //     [theme.breakpoints.up("sm")]: {
-  //       width: `calc(100% - ${drawerWidth}px)`,
-  //       marginLeft: drawerWidth
-  //     }
-  //   },
   menuButton: {
     marginRight: theme.spacing(2),
     [theme.breakpoints.up("sm")]: {
@@ -63,16 +55,6 @@ function Navigation() {
   const classes = useStyles();
   const isMobile = useMediaQuery("(max-width:600px)");
   const isNotMobile = useMediaQuery("(min-width:601px)");
-  const isMobileVertical = useMediaQuery("(min-height:600px)");
-
-  //   const handleBackHome = () => {
-  //     window.location = "/";
-  //   };
-
-  //   const handleSignOut = () => {
-  //     firebase.auth().signOut();
-  //     window.location = "/";
-  //   };
 
   return (
     <>
@@ -131,14 +113,6 @@ function Navigation() {
                               <PersonIcon />
                             </ListItemIcon>
                             <ListItemText>TWÓJ PROFIL</ListItemText>
-                          </ListItem>
-                        )}
-                        {user && (
-                          <ListItem component={Link} to="/aboutus" button>
-                            <ListItemIcon>
-                              <InfoIcon />
-                            </ListItemIcon>
-                            <ListItemText>O NAS</ListItemText>
                           </ListItem>
                         )}
                       </List>

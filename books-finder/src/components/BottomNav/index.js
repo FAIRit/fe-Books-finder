@@ -35,6 +35,7 @@ export default function BottomNav() {
   // };
 
   return (
+    <div className = "main-container">
     <AppBar position="fixed" className={classes.appBar}>
             < BottomNavigation
       value={value}
@@ -58,13 +59,6 @@ export default function BottomNav() {
         />
         <BottomNavigationAction
           component={Link}
-          to="/userpanel"
-          label="Ulubione"
-          value="favourites"
-          icon={<FavoriteIcon />}
-        />
-        <BottomNavigationAction
-          component={Link}
           to="/clinics"
           label="Poradnie"
           value="clinics"
@@ -73,33 +67,12 @@ export default function BottomNav() {
         <BottomNavigationAction
           component={Link}
           to="/userpanel"
-          label="Panel użytkownika"
+          label="Twój profil"
           value="userpanel"
           icon={<PersonIcon />}
         />
       </BottomNavigation>
       </AppBar> 
+      </div>
   );
 } 
-
-
-
-// export default function BottomNav() {
-//   const classes = useStyles();
-//   const [value, setValue] = React.useState(0);
-
-//   return (
-//     <BottomNavigation
-//       value={value}
-//       onChange={(event, newValue) => {
-//         setValue(newValue);
-//       }}
-//       showLabels
-//       className={classes.root}
-//     >
-//       <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-//       <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-//       <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-//     </BottomNavigation>
-//   );
-// }

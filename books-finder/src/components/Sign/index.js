@@ -70,7 +70,7 @@ class Sign extends Component {
         return (
             <>
                     <Container component="main" maxWidth="xs">
-                            <div style={{marginTop: 30, textAlign: "center"}}>
+                            <div style={{marginTop: 50, textAlign: "center"}}>
                                 <Typography component="h1" variant="h5">
                                     {this.props.isSignUp ? 'Zarejestruj się' : 'Zaloguj się'}
                                 </Typography>
@@ -111,7 +111,7 @@ class Sign extends Component {
                                         variant="contained"
                                         style = {{backgroundColor:'#6C63FF'}}
                                     >
-                                        {this.props.isSignUp ? 'Sign up' : 'Sign in'}
+                                        {this.props.isSignUp ? 'Zarejestruj' : 'Zaloguj'}
                                     </Button>
                                     {
                                         this.props.isSignUp

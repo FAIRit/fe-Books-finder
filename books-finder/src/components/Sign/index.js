@@ -22,18 +22,6 @@ class Sign extends Component {
         })
     };
 
-    // handleOnSubmit = (event) => {
-    //     event.preventDefault();
-    // const db = firebase.firestore();
-    // db.settings({
-    //   timestampsInSnapshots: true
-    // });
-    // this.setState()
-
-    // const userRef = db.collection(“users”).add({
-    //   password: this.state.pasword,
-    //   email: this.state.email
-    // });  
     handleOnSubmit = (event) => {
         event.preventDefault();
 

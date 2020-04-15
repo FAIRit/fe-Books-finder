@@ -6,7 +6,6 @@ import {
   Card,
   CardContent,
 } from "@material-ui/core";
-// import styles from "./UserPanel.module.css";
 
 class FavouriteBooksPanel extends React.Component {
   state = {
@@ -33,7 +32,6 @@ class FavouriteBooksPanel extends React.Component {
                 <Grid item sm={3} style = {{height:200}}>
                 <Card>
                   <img 
-                //   className={styles.favouriteImage}
                    src={book.data.imageURL} alt="książka" style = {{width:200, textAlign:"center"}}/>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">

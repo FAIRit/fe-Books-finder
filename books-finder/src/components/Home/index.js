@@ -18,30 +18,16 @@ class Home extends Component {
       return <Redirect to="/sign-in" />;
     }
     return (
- 
-      <UserProvider>
 
-        {user => {
-          return (
             <div className={styles.landing}>
               <img
                 className={styles.mainPicture}
                 src="images/undraw_book_lover_mkck.svg"
                 alt="Ilusracja"
               />
-
-              {user ? null : (
-                <Button onClick={this.handleOnSubmit}>Zaczynamy</Button>
-              )}
-              {/* {user ? <Redirect to="/books" /> : <Redirect to="/sign-in" />} */}
             </div>
           );
         }}
         
-      </UserProvider>
-  
-    );
-  }
-}
 
 export default Home;

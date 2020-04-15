@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
-import styles from "./Navigation.module.css";
 import UserProvider from "../UserProvider";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -90,7 +89,6 @@ function Navigation() {
                           <ListItem
                             component={Link}
                             to="/books"
-                            //  value= "KSIĄŻKI"
                             button
                           >
                             <ListItemIcon>

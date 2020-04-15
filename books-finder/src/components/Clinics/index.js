@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import  {Box, Typography, List, Paper, ListItem, Grid, } from "@material-ui/core"
-import styles from "./Clinics.module.css";
+
 
 const mapStyles = {
     width: '550px',

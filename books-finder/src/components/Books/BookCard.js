@@ -11,23 +11,15 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import Button from "@material-ui/core/Button";
 import { Avatar, IconButton, CardMedia, Paper } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-// import Rating from "@material-ui/lab/Rating";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-// import theme from "../../theme";
 import styles from "./Books.module.css";
 import CloseIcon from "@material-ui/icons/Close";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
 import MuiDialogContent from "@material-ui/core/DialogContent";
 import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-// import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
-// import DialogTitle from "@material-ui/core/DialogTitle";
+
 import { withStyles } from "@material-ui/core/styles";
-import Comments from "../Comments/Comments";
-import  { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
 root2: {
@@ -43,9 +35,6 @@ marginRight:0,
 top:0,
 color: theme.palette.grey[500]
 },
-// openButton: {
-//   color: theme.palette.grey[500],
-// }
 }));
 
 const DialogTitle = withStyles(styles)(props => {
@@ -188,8 +177,6 @@ function BookCard (props)  {
         >
           <FavoriteIcon />
         </IconButton>
-              {/* <Comments  /> */}
-  
         </Dialog>
      </>
       )

@@ -9,7 +9,6 @@ class Books extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // books: [],
       filter: {
         category: "all",
         title: "",
@@ -18,21 +17,10 @@ class Books extends Component {
         publisher: "",
         remove: " "
       },
-    //   error: null
-    // };
+
   }
 }
-  // componentDidMount() {
-  //   fetch("books.json")
-  //     .then(response => response.json())
-  //     .then(response =>
-  //       this.setState({
-  //         ...this.state,
-  //         books: response
-  //       })
-  //     )
-  //     .catch(error => this.setState(...this.state, error));
-  // }
+
   handleCategoryButton = category => {
     console.log(category);
     this.setState({

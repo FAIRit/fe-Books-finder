@@ -16,10 +16,7 @@ import styles from "./Books.module.css";
 class Filters extends Component {
   state = {
     category: "all"
-    // title: " ",
-    // author: " ",
-    // publisher: " ",
-    // keyword: " "
+
   };
   handleCategoryButton = event => {
     this.props.handleCategoryButton(event.target.value);
@@ -60,10 +57,8 @@ class Filters extends Component {
     const { category, title, keywords, author, publisher } = this.state;
     return (
       <>
-      {/* <div className ={styles.bigContainer?} */}
         <div className={styles.category}>
           <Grid container spacing={5}>
-            {/* <Grid item xs={3} sm={1.5}></Grid> */}
             <Grid item sm={12} md={4}>
               <Paper className = {styles.categoryButtons}>
                 <img
@@ -113,7 +108,6 @@ class Filters extends Component {
                 </Button>
               </Paper>
             </Grid>
-            {/* <Grid item xs={3} sm={1.5}></Grid> */}
           </Grid>
         </div>
         <div className={styles.filters}>
@@ -150,56 +144,3 @@ class Filters extends Component {
   }
 }
 export default Filters;
-// class Filters extends Component {
-//   state = {
-//     category: "all",
-//     // title: " ",
-//     // author: " ",
-//     // publisher: " ",
-//     // keyword: " "
-//   };
-
-// onCategoryFilterChanged = event => {
-//     this.props.handleCategoryButton(category);
-//   };
-
-//   onTitleFilterChanged = event => {
-//     this.props.onTitleFilterChanged(event.target.value);
-//   };
-//   onKeywordsFilterChanged = event => {
-//     this.props.onKeywordsFilterChanged(event.target.value);
-//   };
-//   onAuthorFilterChanged = event => {
-//     this.props.onAuthorFilterChanged(event.target.value);
-//   };
-//   onPublisherFilterChanged = event => {
-//     this.props.onPublisherFilterChanged(event.target.value);
-//   };
-//   render() {
-//     const { category
-//       // , title, keywords, author, publisher
-//      } = this.state;
-
-//     return (
-//       <>
-//         <div className={style.categoryButtons}>
-//             <Button value="children" onClick = {()=>this.onCategoryFilterChanged('children')}>Książki dla dzieci</Button>
-//             <Button value="teachers" onClick = {()=>this.onCategoryFilterChanged('teachers')}>Książki dla pedagogów/terapeutów</Button>
-//             <Button value="parents" onClick = {()=>this.onCategoryFilterChanged('parents')}>Książki dla rodziców</Button>
-//         </div>
-//         <div className={style.filters}>
-//           TYTUŁ
-//           <Input onChange={this.onTitleFilterChanged} />
-//           AUTOR
-//           <Input onChange={this.onAuthorFilterChanged} />
-//           WYDAWNICTWO
-//           <Input onChange={this.onPublisherFilterChanged} />
-//           SŁOWO KLUCZOWE
-//           <Input onChange={this.onKeyWordsFilterChanged} />
-//         </div>
-//       </>
-//     );
-//   }
-// }
-
-// export default Filters;

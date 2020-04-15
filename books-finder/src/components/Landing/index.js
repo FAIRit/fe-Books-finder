@@ -32,7 +32,6 @@ class Landing extends Component {
               {user ? null : (
                 <Button size="large" onClick={this.handleOnSubmit}>Zaczynamy</Button>
               )}
-              {/* {user ? <Redirect to="/books" /> : <Redirect to="/sign-in" />} */}
             </div>
           );
         }}

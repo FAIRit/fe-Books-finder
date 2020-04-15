@@ -89,60 +89,33 @@ justify-content: space-between;
 @media (max-width: 500px) {
 
     .paper {
-        /* height: 100vh; */
         margin: 0 auto;
 
     }
-    /* .title {
-        font-size: 3rem;
-       height: 120px;
-    }
 
-    .media{
-        text-align:center;
-         height:100;
-
-    }
-    .text {
-        /* margin-top:10px;
-        padding:1rem;
-        text-align:justify; */
-        /* height:100px;
-        } */
 } 
 @media (max-width: 600px) {
 
     .paper {
-        /* height: 550px; */
+
         margin: 10px;
     }
     .title {
-        /* font-size: 3rem; */
+ 
        height: 120px;
        font-size: 1.5rem;
     }
-/* 
-    .media{
-        text-align:center;
-         height:100;
-
-    }
-    .text {
-        /* margin-top:10px;
-        padding:1rem;
-        text-align:justify; */
-        /* height:100px;
-        } */ 
+ 
 } 
 
 @media (max-width: 600px) {
 
     .paper {
-        /* height: 550px; */
+
         margin: 10px;
     }
     .title {
-        /* font-size: 3rem; */
+    
        height: 120px;
        font-size: 1rem;
     }
@@ -164,9 +137,6 @@ justify-content: space-between;
 
     }
     .text {
-        /* margin-top:10px;
-        padding:1rem;
-        text-align:justify; */
         height:100px;
         }
 }
@@ -176,22 +146,7 @@ justify-content: space-between;
         height: 770px;
         margin: 10px;
     }
-    /* .title {
-        font-size: 3rem;
-       height: 120px;
-    }
 
-    .media{
-        text-align:center;
-         height:100;
-
-    }
-    .text {
-        /* margin-top:10px;
-        padding:1rem;
-        text-align:justify; */
-        /* height:100px;
-        } */
 } 
 @media (max-width: 1300px) {
 
@@ -199,20 +154,5 @@ justify-content: space-between;
         height: 670px;
         margin: 10px;
     }
-    /* .title {
-        font-size: 3rem;
-       height: 120px;
-    }
 
-    .media{
-        text-align:center;
-         height:100;
-
-    }
-    .text {
-        /* margin-top:10px;
-        padding:1rem;
-        text-align:justify; */
-        /* height:100px;
-        } */
 } 

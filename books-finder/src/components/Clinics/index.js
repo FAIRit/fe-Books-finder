@@ -108,3 +108,5 @@ export class Clinics extends Component {
 export default GoogleApiWrapper({
   apiKey: ('AIzaSyC27uz1EZJyA00fmasGKWMKCv6cznNeRXM')
 })(Clinics)
+
+

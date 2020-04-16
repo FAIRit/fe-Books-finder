@@ -76,7 +76,7 @@ class Books extends Component {
     const matchedKeywords = book.keywords.filter(keyword => {
       return keyword.toLowerCase().includes(this.state.filter.keywords.toLowerCase())
     });
-    console.log(matchedKeywords);
+    // console.log(matchedKeywords);
     return matchedKeywords.length > 0;
   };
   removeAllFilters = () => {

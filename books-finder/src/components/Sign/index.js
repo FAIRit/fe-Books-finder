@@ -65,6 +65,7 @@ class Sign extends Component {
                                 <form noValidate onSubmit={this.handleOnSubmit}>
                                     <TextField
                                         variant="outlined"
+                                        color= "primary"
                                         margin="normal"
                                         required
                                         fullWidth
@@ -97,7 +98,7 @@ class Sign extends Component {
                                         type="submit"
                                         fullWidth
                                         variant="contained"
-                                        style = {{backgroundColor:'#6C63FF'}}
+                                        style = {{backgroundColor:'#6C63FF', marginBottom:10}}
                                     >
                                         {this.props.isSignUp ? 'Zarejestruj' : 'Zaloguj'}
                                     </Button>

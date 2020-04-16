@@ -1,6 +1,5 @@
 import React from 'react';
 import PageWrapper from "../PageWrapper";
-import Paper from "@material-ui/core/Paper/Paper";
 import Table from "@material-ui/core/Table";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell/TableCell";

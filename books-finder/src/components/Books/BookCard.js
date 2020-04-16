@@ -1,18 +1,10 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import clsx from "clsx";
-import { Card, CardHeader, CardContent } from "@material-ui/core";
-import CardActions from "@material-ui/core/CardActions";
-import Collapse from "@material-ui/core/Collapse";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
 import Button from "@material-ui/core/Button";
-import { Avatar, IconButton, CardMedia, Paper } from "@material-ui/core";
+import {  IconButton, Paper } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
 import styles from "./Books.module.css";
 import CloseIcon from "@material-ui/icons/Close";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
@@ -70,8 +62,7 @@ function BookCard (props)  {
     book: {
       data: {title, author, publisher, imageURL, id },
       descriptions: { descriptionBasic, descriptionExtended },
-      keywords:[]
-    }
+      keywords:[]}
   } = props;
   const [open, setOpen] = React.useState(false);
   const classes = useStyles();

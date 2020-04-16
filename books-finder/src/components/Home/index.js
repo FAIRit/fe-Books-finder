@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Button } from "@material-ui/core";
 import styles from "./Home.module.css";
 import { Redirect } from "react-router";
-import UserProvider from "../UserProvider";
+
 
 class Home extends Component {
   state = {
@@ -23,7 +22,7 @@ class Home extends Component {
               <img
                 className={styles.mainPicture}
                 src="images/undraw_book_lover_mkck.svg"
-                alt="Ilusracja"
+                alt="Ilustracja"
               />
             </div>
           );

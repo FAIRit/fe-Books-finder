@@ -7,12 +7,9 @@
     background-color: #6C63FF;
 }
 
-
-/* .bigContainer {
-    margin: 70px 50px 30px 30px;
-    text-align: justify;
+.logo {
+    fill: black;
+    width: 200px;
+    margin-top: 70px;
+   
 }
-
-.smallContainer {
-    margin: 30px auto 30px;
-} */

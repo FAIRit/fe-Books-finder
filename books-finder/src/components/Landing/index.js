@@ -3,6 +3,7 @@ import { Button } from "@material-ui/core";
 import styles from "./Landing.module.css";
 import { Redirect } from "react-router";
 import UserProvider from "../UserProvider";
+import Logo from "./Logo";
 
 class Landing extends Component {
   state = {
@@ -28,9 +29,13 @@ class Landing extends Component {
                 src="images/undraw_book_lover_mkck.svg"
                 alt="Ilusracja"
               />
+              <div className= {styles.logoContainer}>
+                <Logo />
+
+              </div>
 
               {user ? null : (
-                <Button size="large" onClick={this.handleOnSubmit}>Zaczynamy</Button>
+                <Button style = {{color:'white'}}  size="large" onClick={this.handleOnSubmit}>Zaczynamy</Button>
               )}
             </div>
           );

@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 import {
-  Input,
-  Select,
-  MenuItem,
   Button,
   Grid,
   Paper,
-  ButtonGroup,
   TextField
 } from "@material-ui/core";
 import "../../App.css";
-import SearchIcon from '@material-ui/icons/Search';
 import styles from "./Books.module.css";
 
 class Filters extends Component {
@@ -54,7 +49,6 @@ class Filters extends Component {
   };
 
   render() {
-    const { category, title, keywords, author, publisher } = this.state;
     return (
       <>
         <div className={styles.category}>
@@ -62,6 +56,7 @@ class Filters extends Component {
             <Grid item sm={12} md={4}>
               <Paper className = {styles.categoryButtons}>
                 <img
+                alt="ilustracja obrazująca dzieci"
                   className={styles.pictures}
                   src="images/undraw_children_4rtb.png"
                 />
@@ -78,6 +73,7 @@ class Filters extends Component {
             <Grid item sm={12} md={4}>
               <Paper className = {styles.categoryButtons}>
                 <img
+                 alt="ilustracja obrazująca rodzinę"
                   className={styles.pictures}
                   src="images/undraw_quality_time_wiyl.png"
                 />
@@ -94,6 +90,7 @@ class Filters extends Component {
             <Grid item sm={12} md={4}>
               <Paper className = {styles.categoryButtons}>
                 <img
+                 alt="ilustracja obrazująca Panią nauczycielkę"
                   className={styles.pictures}
                   style = {{width:180, height:180}}
                   src="images/undraw_teacher_35j2.svg"

@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
 import FavouriteBooksPanel from "./FavouriteBooksPanel";
 
 const UserPanel = ({favouriteBooks}) => {

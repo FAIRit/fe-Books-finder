@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
 import UserProvider from "../UserProvider";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -9,15 +9,14 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import BottomNav from "../BottomNav";
-import Home from "../Home";
-import { IconButton } from "@material-ui/core";
-import { Avatar } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
+import Button from "@material-ui/core/Button";
 import HomeIcon from "@material-ui/icons/Home";
 import RoomIcon from "@material-ui/icons/Room";
 import PersonIcon from "@material-ui/icons/Person";
-import InfoIcon from "@material-ui/icons/Info";
 import TopBar from "./TopBar";
+import SmallLogo from "./SmallLogo"
+
 import "../../App.css";
 const drawerWidth = '250';
 const useStyles = makeStyles(theme => ({
@@ -29,6 +28,13 @@ const useStyles = makeStyles(theme => ({
       width: drawerWidth,
       flexShrink: 0
     }
+  },
+  logo :{
+    fill:'black'
+  },
+  logoContainer :{
+    width:200,
+    height:200
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -71,20 +77,12 @@ function Navigation() {
                         paper: classes.drawerPaper
                       }}
                     >
-                      <List className={classes.list}>
-                        {user && (
-                          <ListItem
-                            component={Link}
-                            to="/home"
-                            button
-                          >
-                            <ListItemIcon>
-                              <HomeIcon />
-                            </ListItemIcon>
-                            <ListItemText>HOME</ListItemText>
-                          </ListItem>
-                        )}
-
+                     <div className = {classes.logoContainer}>
+             <Button href="/home">  
+ <SmallLogo className = {classes.logo}/>
+</Button>    
+ </div>
+ <List className={classes.list}>
                         {user && (
                           <ListItem
                             component={Link}
